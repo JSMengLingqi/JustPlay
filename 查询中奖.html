@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function(){
+            function $(id) {return document.getElementById(id);}
+            $("btn").onclick = function () {
+                //alert($("input").value);
+                if($("input").value == "老中医"){
+                    alert("答对啦");
+                }else {
+                    alert("你是啥子嘛");
+                }
+            }
+        }
+
+    </script>
+</head>
+<body>
+<input type="text" id="input" value="请输入...."><button id="btn">查询</button>
+
+</body>
+</html>

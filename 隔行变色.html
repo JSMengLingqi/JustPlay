@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            width: 300px;
+        }
+        li {
+            line-height: 30px;
+            list-style-type: none;
+        }
+        li span {
+            margin: 5px;
+        }
+        li.current {
+            background-color: #ccc!important;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var list = document.getElementsByTagName("li");
+            for ( var i = 0 ; i < list.length ; i++){
+                if (i % 2 !== 0){
+                    list[i].style.backgroundColor = "#EEE";
+                }
+                list[i].onmouseover = function () {
+                    this.className = "current";
+                }
+                list[i].onmouseout = function () {
+                    this.className = "";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="box">
+    <ul>
+        <li>
+            <span>QQ</span><span>邮箱</span><span>会员</span><span>电脑管家</span><span>软件</span>
+        </li>
+        <li>
+            <span>QQ</span><span>邮箱</span><span>会员</span><span>电脑管家</span><span>软件</span>
+        </li>
+        <li>
+            <span>QQ</span><span>邮箱</span><span>会员</span><span>电脑管家</span><span>软件</span>
+        </li>
+        <li>
+            <span>QQ</span><span>邮箱</span><span>会员</span><span>电脑管家</span><span>软件</span>
+        </li>
+        <li>
+            <span>QQ</span><span>邮箱</span><span>会员</span><span>电脑管家</span><span>软件</span>
+        </li>
+        <li>
+            <span>QQ</span><span>邮箱</span><span>会员</span><span>电脑管家</span><span>软件</span>
+        </li>
+        <li>
+            <span>QQ</span><span>邮箱</span><span>会员</span><span>电脑管家</span><span>软件</span>
+        </li>
+    </ul>
+
+</div>
+
+</body>
+</html>

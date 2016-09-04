@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            width: 500px;
+            text-align: center;
+            margin:100px auto;
+        }
+        .btn {
+            background-color: aquamarine;
+        }
+        .bottom div {
+            width: 100%;
+            height: 200px;
+            background-color: lightblue;
+            border: 2px solid #FF6B39;
+            display: none;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var btns = document.getElementsByTagName("button");
+            var divs = document.getElementById("bottom").getElementsByTagName("div");
+            for(var i = 0 ; i < btns.length ; i++){
+                btns[i].index = i;
+                btns[i].onclick = function () {
+                    //alert(this.index);
+                    for(var j = 0 ; j < btns.length ; j++){
+                        btns[j].className = "";
+                        divs[j].style.display = "none";
+                    }
+                    this.className = "btn";
+                    divs[this.index].style.display = "block";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="box">
+        <div class="top">
+            <button>第一个</button>
+            <button>第二个</button>
+            <button>第三个</button>
+            <button>第四个</button>
+            <button>第五个</button>
+            <button>第六个</button>
+        </div>
+        <div class="bottom"id="bottom">
+            <div style="display: block;">本宝宝今天不开心~~</div>
+            <div>啊啊啊我什么时候才能高效的利用我的时间</div>
+            <div>我的牙齿什么时候才能不疼</div>
+            <div>脸上的痘痘什么时候才能全消失</div>
+            <div>腿什么时候才能变长点</div>
+            <div>我什么时候才能发财!!!!</div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .all {
+            width: 400px;
+            height: 400px;
+            text-align: center;
+            margin:100px auto;
+            line-height: 25px;
+        }
+        #js {
+            width: 120px;
+            float: right;
+            margin-right: 100px;
+        }
+        .gl {
+            margin-top:150px;
+        }
+        .gl,.gz,.tzh {
+            float: right;
+            margin-right: 70px;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            function $(id) {return document.getElementById(id);}
+            if($("gl").value >= 5){
+                $("js").onclick = function () {
+                    $("tzh").innerHTML = $("gz").value * 0.2;
+                }
+            } else if ($("gl").value >= 2 && $("gl").value <= 4){
+                $("js").onclick = function () {
+                    $("tzh").innerHTML = $("gz").value * 0.15;
+                }
+            } else if ($("gl").value <2){
+                $("js").onclick = function () {
+                    $("tzh").innerHTML = $("gz").value * 0.1;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="all">
+        <div class="gl">工龄：<input type="text" id="gl"></div>
+        <div class="gz">工资：<input type="text" id="gz"></div>
+        <button id="js">计算</button>
+        <div class="tzh">调整后工资：<input type="text" id="tzh"></div>
+    </div>
+</body>
+</html>

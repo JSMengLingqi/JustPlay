@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            width: 350px;
+            height: 250px;
+            border:1px solid #ccc;
+            margin:100px auto;
+        }
+        .dt {
+            padding-left: 20px;
+            line-height: 35px;
+            font-weight: 700;
+            color:#036;
+        }
+        .dd {
+            padding: 20px;
+        }
+        .dd-t {
+            overflow: hidden;
+        }
+        .icon-l {
+            width: 50px;
+            height: 50px;
+            float: left;
+            background-image: url(images/Icon.png);
+        }
+        .icon-r {
+            margin-left:70px;
+        }
+        .icon-r div {
+            padding-top: 6px;
+            font-size:8px;
+        }
+        .yunshi {
+            width: 80px;
+            height: 13px;
+            display: inline-block;
+            background: url(images/yunshi.png) no-repeat;
+            position: relative;
+        }
+        .start {
+            width: 64px;
+            height: 13px;
+            background: url(images/yunshi.png) no-repeat left bottom;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            function $(id) {return document.getElementById(id);}
+            var star = [10,9,6,7,8,10,9,6,7,8,7,8];
+            var cont = ["经过一阵乱局，你终于摸清了该努力的方向，请相信自己的直觉与他人的帮助，从细小琐事开始做起，...","你很渴望抓住这段宿命的缘分，在感情和子女方面有一个认真的决定。但是底气却不足，有一些各种各...","房屋方面的某个决策越来越清晰，无论是买房还是租赁房屋都可能拍板决定。只要顺着清晰的规划，一...","其实现在的你只要顺应自己内心所想，梳理一下混乱的头绪，依然能够找到清晰的未来之路。包括学习...","通过一系列乱局过后，你的财富目标开始越来越明确。理智帮你扫除了前方的障碍，你只需要遵循逻辑...","家庭生活可能会为你带来一些创伤的经验，家庭也可能会对你个人发展产生一些束缚。有些人会遭遇房...","潜意识中某些目标似乎越来越明确了，但是你可能感到有些模糊不清，而不知道如何去抓住它。人际上...","这个周末你可能感到什么都不想做，金钱状况才是你目前最为关心的。但是现在机遇未起，避免就一些...","迷茫过后真正的方向蕴藏其中，需要你仔细甄别，抓住机遇。今天的你职场上思考力绝佳，也能够与同...","最混乱的时期将逐渐过去，你能够慢慢明确自己心中的理想。有关海外的事物现在也能够更坚定目标，...","冥冥之中你似乎感受到了命运的真谛，把握住某些真相，有些人也更确定自己投资的方向。今天是非常...","近期你将有重要的关系生成，能够一路真心对待你，陪伴你的朋友或是爱人，都是你生命中深刻的缘分..."];
+            $("sele").onchange = function () {
+                $("icon-l").style.backgroundPosition = "0 "+(this.value*50)+"px";
+                $("start").style.width = star[this.value] * 8+"px";
+                $("content").innerHTML = cont[this.value];
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="box">
+        <div class="dt">星座运势</div>
+        <div class="dd">
+            <div class="dd-t">
+                <div class="icon-l" id="icon-l"></div>
+                <div class="icon-r">
+                    <select name="" id="sele">
+                        <option value="0">白羊座(03.21-04.19)</option>
+                        <option value="1">金牛座(04.20-05.20)</option>
+                        <option value="2">双子座(05.21-06.21)</option>
+                        <option value="3">巨蟹座(06.22-07.22)</option>
+                        <option value="4">狮子座(07.23-08.22)</option>
+                        <option value="5">处女座(08.23-09.22)</option>
+                        <option value="6">天秤座(09.23-10.23)</option>
+                        <option value="7">天蝎座(10.24-11.22)</option>
+                        <option value="8">射手座(11.23-12.21)</option>
+                        <option value="9">摩羯座(12.22-01.19)</option>
+                        <option value="10">水瓶座(01.20-02.18)</option>
+                        <option value="11">双鱼座(02.19-03.20)</option>
+                    </select>
+                    <div>今日运势：
+                        <span class="yunshi">
+                            <span class="start" id="start"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="dd-d" ><span id="content">经过一阵乱局，你终于摸清了该努力的方向，请相信自己的直觉与他人的帮助，从细小琐事开始做起，... </span><a href="#">[详细]</a></div>
+        </div>
+    </div>
+</body>
+</html>
