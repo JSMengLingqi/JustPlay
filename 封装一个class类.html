@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: pink;
+            margin: 20px;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            function getClassName(classname) {
+                if(document.getElementsByClassName){
+                    return document.getElementsByClassName(classname);
+                }
+                var Arr = [];
+                var dom = document.getElementsByTagName("*");
+                for(var i = 0 ; i < dom.length ; i++){
+                    if(dom[i].className = classname){
+                        Arr.push(dom[i]);
+                    }
+                }
+                return Arr;
+            }
+            console.log(getClassName("demo").length);
+        }
+    </script>
+</head>
+<body>
+    <div></div>
+    <div class="demo"></div>
+    <div></div>
+    <div></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
