@@ -3,8 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: pink;
+            margin: 20px;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            function getClass(classname) {
+                if(document.getElementsByClassName){
+                    return document.getElementsByClassName(classname);
+                }
+                var Arr = [];
+                var dom = document.getElementsByTagName("*");
+                for(var i = 0 ; i < dom.length ; i++){
+                    var txt = dom[i].className.split(" ");
+                    for(var j = 0 ; j < txt.length ; j++){
+                        if(txt[j].className == classname){
+                            Arr.push(dom[i]);
+                        }
+                    }
+                }
+                return Arr;
+            }
+
+            console.log(getClass("one").length);
+            var test = getClass("one");
+            for(var n = 0 ; n < test.length ; n++){
+                test[n].style.backgroundColor = "red";
+            }
+        }
+    </script>
 </head>
 <body>
-fafasfafasaf                      f
+<div class="demo one"></div>
+<div class="demo"></div>
+<div class="demo"></div>
+<div class="demo one"></div>
+<div class="demo"></div>
+<div class="demo"></div>
+<div class="demo"></div>
+<div class="demo one"></div>
+<div class="demo"></div>
 </body>
 </html>
