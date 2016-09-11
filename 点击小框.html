@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            background-color: #B1191A;
+            color: #FFF;
+            text-align: center;
+            font: 600 50px/100px "Microsoft YaHei";
+            display: none;
+        }
+    </style>
+    <script>
+        function fn(obj) {
+            var target = document.getElementById(obj);
+            target.style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <button onclick="fn('demo1')">第一个盒子</button>
+    <button onclick="fn('demo2')">第二个盒子</button>
+    <button onclick="fn('demo3')">第三个盒子</button>
+    <button onclick="fn('demo4')">第四个盒子</button>
+    <div id="demo1">我</div>
+    <div id="demo2">最</div>
+    <div id="demo3">牛</div>
+    <div id="demo4">比</div>
+</body>
+</html>
