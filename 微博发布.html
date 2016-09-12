@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style-type: none;
+        }
+        .box {
+            margin:100px auto;
+            width: 600px;
+            border:1px solid #333;
+        }
+        textarea {
+            width: 450px;
+            resize: none;//防止用户拖动
+        }
+        .box li {
+            width: 450px;
+            line-height: 30px;
+            border-bottom: 1px dashed #ccc;
+            margin-left: 40px;
+        }
+        .box a {
+            float: right;
+        }
+
+    </style>
+    <script>
+        window.onload = function () {
+            //获取对象   操作对象     button按钮，以及textarea里面的值
+            var btn = document.getElementsByTagName("button")[0];
+            var text = document.getElementsByTagName("textarea")[0];
+            var ul = document.createElement("ul");
+            ul.className = "ul";
+            btn.parentNode.appendChild(ul);
+            btn.onclick = function () {
+                if (text.value == ""){
+                    alert("输入不能为空");
+                    return false;
+                }
+                var newli = document.createElement("li");
+                newli.innerHTML = text.value + "<a href=''>删除</a>";
+
+                text.value = "";
+                var list = ul.children; //获得li的个数
+                if(list.length == 0){
+                    ul.appendChild(newli);
+                }else {
+                    ul.insertBefore(newli,list[0]);  //每次新生成一个li，都放在list[0]前面
+                }
+                var as = document.getElementsByTagName("a");
+                for(var i = 0 ; i < as.length ; i++){
+                    as[i].onclick = function () {
+                        ul.removeChild(this.parentNode);
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <div class="box">
+        微博发布：<textarea name="" id="" cols="30" rows="10"></textarea><button>发布</button>
+
+    </div>
+</body>
+</html>

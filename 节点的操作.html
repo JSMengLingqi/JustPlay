@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function () {
+            var demo = document.getElementById("demo");
+            var btn = document.getElementsByTagName("button")[0];
+            btn.onclick = function () {
+                //点击按钮之后，会生成一个li标签
+                var newli = document.createElement("li");
+                //节点生成只有必须插入节点才可以显示。所以创建节点+插入节点是一套流程，缺一不可
+                demo.appendChild(newli);    //子节点放入的是父节点的最后面
+            }
+        }
+    </script>
+</head>
+<body>
+    <button>点我点我
+    </button>
+    <ul id="demo"></ul>
+</body>
+</html>
