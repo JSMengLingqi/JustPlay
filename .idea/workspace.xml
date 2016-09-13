@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="102adc42-7fa0-4033-905b-536364298ee6" name="Default" comment="new2016.9.12">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/22.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/33.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/44.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/55.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/66.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/微博发布.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/节点的操作.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/轮播图.html" />
+    <list default="true" id="102adc42-7fa0-4033-905b-536364298ee6" name="Default" comment="9.13">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/日历.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="鼠标展示.iws" />
@@ -57,18 +49,28 @@
       <file leaf-file-name="轮播图.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/轮播图.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
+            <state relative-caret-position="300">
               <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="微博发布.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="微博发布.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/微博发布.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="69" column="14" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
+            <state relative-caret-position="337">
+              <caret line="67" column="42" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="日历.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/日历.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="36" column="65" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -114,6 +116,7 @@
         <option value="$PROJECT_DIR$/节点的操作.html" />
         <option value="$PROJECT_DIR$/轮播图.html" />
         <option value="$PROJECT_DIR$/微博发布.html" />
+        <option value="$PROJECT_DIR$/日历.html" />
       </list>
     </option>
   </component>
@@ -290,6 +293,7 @@
       <workItem from="1473601873006" duration="835000" />
       <workItem from="1473603754865" duration="2388000" />
       <workItem from="1473689190533" duration="4758000" />
+      <workItem from="1473776039349" duration="2697000" />
     </task>
     <task id="LOCAL-00001" summary="kkk">
       <created>1473259756581</created>
@@ -323,7 +327,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42940000" />
+    <option name="totallyTimeSpent" value="45637000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -331,7 +335,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1954612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -367,20 +371,14 @@
     <MESSAGE value="my className finally" />
     <MESSAGE value="new" />
     <MESSAGE value="new2016.9.12" />
-    <option name="LAST_COMMIT_MESSAGE" value="new2016.9.12" />
+    <MESSAGE value="9.13" />
+    <option name="LAST_COMMIT_MESSAGE" value="9.13" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/点击隐藏文字demo css部分.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/通过验证表单.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
@@ -685,7 +683,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/轮播图.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
+        <state relative-caret-position="300">
           <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
           <folding />
         </state>
@@ -693,8 +691,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/微博发布.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="69" column="14" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
+        <state relative-caret-position="337">
+          <caret line="67" column="42" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/日历.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="36" column="65" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
           <folding />
         </state>
       </provider>
