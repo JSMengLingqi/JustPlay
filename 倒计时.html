@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #demo {
+            font-size: 20px;
+            color: red;
+            text-align: center;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var demo = document.getElementById("demo");
+            var endTime = new Date("2016/10/1 17:30:00");
+            setInterval(clock,1000);  //每隔一分钟运行定时器
+            function clock(){
+                var nowTime = new Date();
+                //获取当前时间至目标时间的时间差  单位为秒
+                var second = parseInt((endTime.getTime() - nowTime.getTime()) / 1000);
+                var Esecond = parseInt((endTime.getTime() - nowTime.getTime()) / 1000) % 60;
+                //console.log(second);
+                //分数
+                var minute = parseInt(second / 60 % 60);
+                //小时
+                var hour = parseInt(second / (60 * 60) % 24);
+                //天数
+                var day = parseInt(second / (60 * 60 * 24) % 30);
+
+                Esecond<10 ? Esecond =("0"+Esecond):Esecond;
+                minute<10 ? minute = "0"+minute:minute;
+                hour<10 ? hour = "0"+hour:hour;
+                day<10 ? day = "0"+day:day;
+
+                demo.innerHTML = "剩余时间：" + day + "天" + hour + "小时" + minute + "分钟" + Esecond + "秒";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="demo"></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function () {
+            var demo = document.getElementById("demo");
+            setInterval(fun,1000);
+            var num = 1;
+            function fun() {
+                num++;
+                demo.innerHTML = num;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="demo"></div>
+
+</body>
+</html>
