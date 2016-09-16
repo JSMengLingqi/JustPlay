@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .clock {
+            width: 600px;
+            height: 600px;
+            background: url(images/clock.jpg) no-repeat;
+            margin:0 auto;
+            position: relative;
+        }
+        div {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .h {
+            background: url(images/hour.png) no-repeat center center;
+        }
+        .m {
+            background: url(images/minute.png) no-repeat center center;
+        }
+        .s {
+            background: url(images/second.png) no-repeat center center;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var h = document.getElementById("hours");
+            var m = document.getElementById("minute");
+            var s = document.getElementById("seconds");
+
+            var nowTime = 0;
+            var second = 0;
+            var minute = 0;
+            var hour = 0;
+
+            setInterval(function () {
+                var date = new Date();
+                //获得现在时间，不是距离1970年的时间，是现在时间的毫秒
+                nowTime = date.getMilliseconds();
+                //现在秒数再加上已经跑过的秒数
+                second = date.getSeconds();
+                //现在的分数加上已经跑过的分数
+                minute = date.getMinutes() +second/60;
+                //现在的小时数加上已经跑过得小时数,因为时钟只有12个数，所以对12取余，这样的话，如果是13点，那么时钟上就显示重新从1点计时
+                hour = date.getHours() % 12 + minute/60;
+
+                //一个时钟一共360°，一分钟有60秒，那么一秒就走360/60 = 6°
+                //console.log(date.getHours());
+                //旋转角度                             现在是second秒
+                s.style.WebkitTransform = "rotate("+ second*6 +"deg)";
+                m.style.WebkitTransform = "rotate("+ minute*6 +"deg)";
+                //一个时钟一共360°，一圈有12小时，那么一小时就是走360/12 = 30°
+                h.style.WebkitTransform = "rotate("+ hour*30 +"deg)";
+
+            },1000)
+
+        }
+    </script>
+</head>
+<body>
+<div class="clock">
+    <div class="h" id="hours"></div>
+    <div class="m" id="minute"></div>
+    <div class="s" id="seconds"></div>
+</div>
+</body>
+</html>
