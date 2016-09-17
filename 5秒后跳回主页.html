@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="demo"></div>
+</body>
+</html>
+<script>
+    var demo = document.getElementById("demo");
+    var count = 5;
+    var speed = 1000;
+    setTimeout(goIndexPage,speed);
+    function goIndexPage() {
+        count--;
+        demo.innerHTML = "<a href = 'http://github.com'>页面将在" + count + "后跳转";
+        if(count==0){
+            //如果count小于0，即5秒倒计时结束，页面将跳转到主页
+            window.location.href = "http://github.com";
+        }
+        else {
+            //递归调用，自己调用自己
+            //setTimeout(goIndexPage,speed);
+            setTimeout(arguments.callee,speed);
+        }
+    }
+</script>

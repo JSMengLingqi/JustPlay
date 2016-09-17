@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .xiaomi {
+            width: 512px;
+            height: 400px;
+            margin:100px auto;
+            overflow: hidden;
+            border:1px solid #f00;
+            position: relative;
+        }
+        .xiaomi span {
+            width: 100%;
+            height: 200px;
+            position: absolute;
+            left: 0;
+            cursor: pointer;
+        }
+        .up {
+            top: 0;
+        }
+        .down {
+            bottom:0;
+        }
+        #pic {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var time = null;
+            function $(id) {
+                return document.getElementById(id);
+            }
+            var num = 0;
+            $("downDOM").onmouseover = function () {
+                time = setInterval(function () {
+                    num -= 3;
+                    num>=-1070 ? $("pic").style.top = num+"px" : clearInterval(time);
+                    //console.log(num);
+                },20);
+
+            }
+            $("upDOM").onmouseover = function () {
+                time = setInterval(function () {
+                    num += 2;
+                    num<1 ? $("pic").style.top = num+"px" : clearInterval(time);
+                    //console.log(num);
+                },20);
+            }
+            $("upDOM").parentNode.onmouseout= function () {
+                clearInterval(time);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="xiaomi">
+        <img src="images/mi.png" alt="" id="pic">
+        <span class="up" id="upDOM"></span>
+        <span class="down" id="downDOM"></span>
+    </div>
+</body>
+</html>
