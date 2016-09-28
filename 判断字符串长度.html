@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var txt = "EveryDay is Friday 盼我疯魔，又盼我孑孓不独活";
+        console.log(txt.length);
+        function thisTxt(text) {
+            var leng = 0;
+            //console.log(text.charCodeAt(0));
+            for(var i = 0 ; i < text.length ; i++){
+                if (text.charCodeAt(i) > 0 && text.charCodeAt(i) <= 127){
+                    leng++;
+                }else{
+                    leng+=2;
+                }
+            }
+            return leng;
+        }
+        console.log(thisTxt(txt));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

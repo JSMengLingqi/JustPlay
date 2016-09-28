@@ -39,6 +39,7 @@
             }
             var num = 0;
             $("downDOM").onmouseover = function () {
+                clearInterval(time);
                 time = setInterval(function () {
                     num -= 3;
                     num>=-1070 ? $("pic").style.top = num+"px" : clearInterval(time);
@@ -47,6 +48,7 @@
 
             }
             $("upDOM").onmouseover = function () {
+                clearInterval(time);
                 time = setInterval(function () {
                     num += 2;
                     num<1 ? $("pic").style.top = num+"px" : clearInterval(time);
