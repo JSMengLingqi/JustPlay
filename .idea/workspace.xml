@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="102adc42-7fa0-4033-905b-536364298ee6" name="Default" comment="新学会一个小技能，计算数组的长度，因为存储时数字型字节为1，字符型字节为2，而length会将字符型的字节计算为1，这样就造成数组长度计算时结果不正确，于是使用charCodeAt()方法返回Unicode编码来判断是数字还是字符，从而准确的计算数组长度。">
+    <list default="true" id="102adc42-7fa0-4033-905b-536364298ee6" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/判断字符串长度.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/小米手机.html" afterPath="$PROJECT_DIR$/小米手机.html" />
@@ -70,8 +70,8 @@
       <file leaf-file-name="小米手机.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/小米手机.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="64" column="75" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
+            <state relative-caret-position="276">
+              <caret line="61" column="34" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -319,7 +319,7 @@
       <workItem from="1474006964467" duration="6452000" />
       <workItem from="1474100835032" duration="10735000" />
       <workItem from="1474813443373" duration="1963000" />
-      <workItem from="1475068768584" duration="2005000" />
+      <workItem from="1475068768584" duration="2083000" />
     </task>
     <task id="LOCAL-00001" summary="kkk">
       <created>1473259756581</created>
@@ -377,11 +377,18 @@
       <option name="project" value="LOCAL" />
       <updated>1474124772147</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="新学会一个小技能，计算数组的长度，因为存储时数字型字节为1，字符型字节为2，而length会将字符型的字节计算为1，这样就造成数组长度计算时结果不正确，于是使用charCodeAt()方法返回Unicode编码来判断是数字还是字符，从而准确的计算数组长度。">
+      <created>1475074594171</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1475074594171</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77891000" />
+    <option name="totallyTimeSpent" value="77969000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -754,8 +761,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/小米手机.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="64" column="75" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
+        <state relative-caret-position="276">
+          <caret line="61" column="34" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
           <folding />
         </state>
       </provider>
