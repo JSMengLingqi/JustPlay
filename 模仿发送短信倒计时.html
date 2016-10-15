@@ -9,8 +9,10 @@
             var count = 10;
             var time = null;
             btn.onclick = function () {
+                //this指的是事件的调用者，即btn
                 this.disabled = true;
                 time = setInterval(fun,1000);
+                //在这个将this 赋值为that，那么在别的方法中就可以使用that来操作this
                 var that = this;
                 function fun() {
                     count--;
@@ -18,8 +20,10 @@
                         that.innerHTML = "还剩余" + count + "秒";
                     }
                     else {
+                        //由于button是一个双标签，所以想要改变button 中的内容，只能使用innerHtml而不能使用value
                         that.innerHTML = "重新发送短信";
                         that.disabled = false;
+                        //clearInterval()方法是关闭定时器，因为定时器如果不关闭将会一直被触发
                         clearInterval(time);
                         count = 5;
                     }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function () {
+            function $(id) {
+                return document.getElementById(id);
+            }
+            $("sele").onclick = function () {
+                //index返回自前面器第一个字符的位置 ，第二个相同的字符则被忽略
+                var result = $("txt").value.indexOf($("index").value);
+                function ind() {
+                    if ( result >= 0){
+                        alert("字符<"+ $("index").value + ">位于<" + $("txt").value + ">中第" + (result +1) + "位");
+                    } else {
+                        alert("找不到该字符");
+                    }
+                }
+                ind();
+                //alert($("txt").indexOf())
+            }
+            $("last").onclick = function () {
+                //lastIndexOf 是从后面开始数，但是返回的仍然是从左边开始数
+                //如果字符串中没有重复的字符，那么ind与lastIndexOf没有区别，但是如果有重复的字符，那么两个方法返回的值不相同
+                var Lresult = $("txt").value.lastIndexOf($("index").value);
+                function lastIn() {
+                    console.log(Lresult);
+                }
+                lastIn();
+            }
+        }
+    </script>
+</head>
+<body>
+字符串：<input type="text" id="txt">
+索引的字符串位置：<input type="text" id="index">
+<button id="sele">从前面开始索引</button>
+<button id="last">从后面开始索引</button>
+
+</body>
+</html>

@@ -5,10 +5,13 @@
     <title>Title</title>
     <script>
         var txt = "EveryDay is Friday 盼我疯魔，又盼我孑孓不独活";
+        //charAt()方法根据位置返回字符，例:charAt(6)就是返回数组下标为6的字符
+        console.log(txt.charAt(6));
         console.log(txt.length);
         function thisTxt(text) {
             var leng = 0;
             //console.log(text.charCodeAt(0));
+            //charCodeAt()返回unicode编码，unicode编码包含ASCⅡ码和utf-8，前128位一样
             for(var i = 0 ; i < text.length ; i++){
                 if (text.charCodeAt(i) > 0 && text.charCodeAt(i) <= 127){
                     leng++;
