@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function () {
+            function $(str) {
+                //封装自己的$
+                var s = str.charAt(0); //charAt通过索引号 返回字符
+                var ss = str.substr(1);
+                switch(s){
+                    case "#":
+                        return document.getElementById(ss);
+                    break;
+                    case ".":
+                        return getClass(ss);
+                    break;
+                    default:
+                        return document.getElementsByTagName(str);
+
+                }
+            }
+            function getClass(classname) {   //类的写法
+                if(document.getElementsByClassName){
+                    return document.getElementsByClassName(classname);
+                }
+                var Arr = [];
+                var dom = document.getElementsByTagName("*");
+                for(var i = 0 ; i < dom.length ; i++){
+                    var txt = dom[i].className.split(" ");
+                    for(var j = 0 ; j < txt.length ; j++){
+                        if(txt[j].className == classname){
+                            Arr.push(dom[i]);
+                        }
+                    }
+                }
+                return Arr;
+            }
+            $("#demo").style.backgroundColor = "purple";
+        }
+    </script>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: pink;
+            margin:20px;
+        }
+    </style>
+</head>
+<body>
+<div id="demo"></div>
+<div></div>
+<div id="demo"></div>
+<div class="one"></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</body>
+</html>

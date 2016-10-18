@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="file" id="File"><span>31312</span>  <!--文件域 -->
+</body>
+</html>
+<script>
+    var file = document.getElementById("File");
+    //onchange事件会在域的内容改变时发生。
+
+    file.onchange = function () {
+        //alert(111);
+        var path = this.value;
+        //alert(path);
+        var str = path.substr(path.lastIndexOf(".")).toUpperCase();
+        console.log(str);
+        if(str == ".JPG" || str == ".PNG"){
+            this.nextSibling.innerHTML = "格式正确";
+            //console.log(111);
+
+        }else{
+            this.nextSibling.innerHTML = "格式错误";
+            //console.log(222);
+        }
+    }
+
+</script>

@@ -13,7 +13,7 @@
     var str = PI + "";   // 因为数字没法进行字符操作  先转换
     var index = str.indexOf("."); // 我们要返回当前字符的点的位置  indexOf(".")
     console.log(index);
-    console.log(str.substr(0,index+3));
+    console.log(str.substr(0,index+3));//substr()方法第一个参数表示起始位置，第二个参数表示起始位置往后截取的长度
     console.log(str.substr(0,str.indexOf(".")+3));
     console.log(parseInt(PI*100) /100);
     //1213.141592653 * 100  =  121314.1592653   取整   121314  /100
