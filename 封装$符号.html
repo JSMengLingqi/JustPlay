@@ -38,6 +38,11 @@
                 return Arr;
             }
             $("#demo").style.backgroundColor = "purple";
+            $("#last").style.backgroundColor = "red";
+            var one = $(".one");
+            for(var i = 0 ; i < one.length ; i++){
+                one[i].style.backgroundColor = "yellow";
+            }
         }
     </script>
     <style>
@@ -52,10 +57,10 @@
 <body>
 <div id="demo"></div>
 <div></div>
-<div id="demo"></div>
+<div id="last"></div>
 <div class="one"></div>
 <div></div>
-<div></div>
+<div class="one"></div>
 <div></div>
 <div></div>
 <div></div>
