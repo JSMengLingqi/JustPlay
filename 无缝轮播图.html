@@ -17,10 +17,11 @@
         }
         .box {
             width: 600px;
-            height: 200px;
+            height: 267px;
             margin: 160px;
             background:pink;
             position: relative;
+            overflow: hidden;
         }
         img {
             vertical-align: top;
@@ -32,14 +33,36 @@
     </style>
 </head>
 <body>
-    <div class="box">
+    <div class="box" id="scroll">
         <ul>
             <li><img src="images/IMG_1455.gif" alt=""></li>
             <li><img src="images/IMG_1630.gif" alt=""></li>
             <li><img src="images/IMG_2095.gif" alt=""></li>
             <li><img src="images/IMG_0427.gif" alt=""></li>
             <li><img src="images/CFWB9886.gif" alt=""></li>
+            <li><img src="images/IMG_1455.gif" alt=""></li>
+            <li><img src="images/IMG_1630.gif" alt=""></li>
+            <li><img src="images/IMG_2095.gif" alt=""></li>
         </ul>
     </div>
 </body>
 </html>
+<script>
+    var scroll = document.getElementById("scroll");
+    var ul = scroll.children[0];
+    setInterval(autoPlay,30);
+    var num = 0;
+    function autoPlay() {
+        num--;
+
+        console.log(num);
+        if(num<-1000){
+            ul.style.left = 0;
+            num = 0;
+        }
+        else{
+            ul.style.left = num +"px";
+        }
+    }
+
+</script>

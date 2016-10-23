@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .all {
+            width: 500px;
+            height: 30px;
+            background-color: lightgrey;
+            position: relative;
+        }
+        .box {
+            position: absolute;
+            top: 29px;
+            left: 8px;
+            width: 100px;
+            height: 30px;
+            background-color: forestgreen;
+        }
+    </style>
+</head>
+<body>
+<button id="btn1">点击1</button>
+<button id="btn2">点击2</button>
+<div class="all"></div><div class="box" id="box"></div>
+</body>
+</html>
+<script>
+    var btn1 = document.getElementById("btn1");
+    var btn2 = document.getElementById("btn2");
+    var box = document.getElementById("box");
+    var num = 0;
+    var leader = 0;
+    var target = 500;
+    var timer1 = null;
+    var timer2 = null;
+    btn1.onclick = function () {
+        clearInterval(timer2);
+        timer1 = setInterval(function () {
+            num++;
+            console.log(num);
+            if(num>=500){
+                clearInterval(timer);
+            }
+            box.style.left = num + "px";
+        },30);
+    }
+    btn2.onclick = function () {
+        clearInterval(timer1);
+        timer2 = setInterval(function () {
+            leader = leader + (target - leader)/20;
+            box.style.width = leader + "px";
+        },30);
+    }
+
+</script>
