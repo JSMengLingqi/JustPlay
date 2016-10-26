@@ -41,27 +41,6 @@
             top: 0;
         }
     </style>
-    <script>
-        window.onload = function () {
-            var icloud = document.getElementById("icould");
-            var box = document.getElementById("box");
-            var list = box.children[1].children;
-            for(var i = 0 ; i < list.length ; i++){
-                list[i].onmouseover = function () {
-                    alert(list);
-                }
-            }
-
-            //缓动公式
-            var leader = 0 ,target = 0;
-            setInterval(function () {
-                leader = leader +(target - leader)/10;
-                icloud.style.left = leader + "px";
-            },30);
-
-
-        }
-    </script>
 </head>
 <body>
 <div class="box" id="box">
@@ -79,3 +58,31 @@
 </div>
 </body>
 </html>
+<script>
+    var icloud = document.getElementById("icloud");
+    var box = document.getElementById("box");
+    var lis = box.children[1].children;
+    var current = 0;
+    //alert(lis.length);
+    for(var i = 0 ; i < lis.length ; i++){
+        lis[i].onmouseover = function () {
+            //alert(this.offsetLeft);
+            //style.left 只能得到行内式的左边距,只有定位的盒子才有style.left
+            //缓动公式
+            target = this.offsetLeft;
+        }
+        lis[i].onmouseout = function () {
+            target = current;
+        }
+        lis[i].onclick = function () {
+            current = this.offsetLeft;
+        }
+
+    }
+    // 缓动公式
+    var leader = 0, target = 0;
+    setInterval(function(){
+        leader = leader + (target - leader ) / 10;
+        icloud.style.left = leader + "px";
+    },10);
+</script>
