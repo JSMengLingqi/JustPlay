@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 200px;
+            height: 266px;
+            margin: 100px;
+            border:1px solid #ccc;
+            position: relative;
+        }
+        .small{
+            position: relative;
+
+        }
+        .big{
+            width: 450px;
+            height: 600px;
+            position: absolute;
+            top:0;
+            left: 360px;
+            border:1px solid #ccc;
+            overflow: hidden;
+            display: none;
+        }
+        .mask{
+            width: 50px;
+            height: 50px;
+            background:rgba(150,150,150,0.4);
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+            cursor: move;
+        }
+        .big img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="box" id="fdj">
+    <div class="small">
+        <img src="images/IMG_1455.gif" alt="">
+        <div class="mask">
+        </div>
+    </div>
+    <div class="big"><img src="images/IMG_1455.JPG" alt=""></div>
+</div>
+</body>
+</html>
+<script>
+    var fdj = document.getElementById("fdj");
+    var small = fdj.children[0];
+    var mask = small.children[1];
+    var big = fdj.children[1];
+    var bigImage = big.children[0];
+    var targetX = 0,targetY = 0;
+
+    small.onmouseover = function () {
+        big.style.display = "block";
+        mask.style.display = "block";
+    }
+    small.onmouseout = function () {
+        big.style.display = "none";
+        mask.style.display = "none";
+    }
+    small.onmousemove = function (event) {
+        var event = event || window.event;
+        targetX = event.clientX - this.offsetParent.offsetLeft - mask.offsetWidth/2;
+        targetY = event.clientY - this.offsetParent.offsetTop - mask.offsetHeight/2;
+        if(targetX<0){
+            targetX = 0;
+        }
+        else if(targetX>small.offsetWidth - mask.offsetWidth){
+            targetX = small.offsetWidth -mask.offsetWidth;
+        }
+        if(targetY<0){
+            targetY = 0;
+        }
+        else if(targetY>small.offsetHeight - mask.offsetHeight-2){
+            targetY = small.offsetHeight - mask.offsetHeight-2;
+
+        }
+        //console.log(small.offsetHeight - mask.offsetTop);
+
+        mask.style.left = targetX + "px";
+        mask.style.top = targetY + "px";
+        //this.innerHTML = targetX + "--" + targetY;
+        bigImage.style.left = -(targetX+mask.offsetWidth)*(big.offsetWidth/small.offsetWidth)+"px";
+        bigImage.style.top = -(targetY+mask.offsetHeight)*(big.offsetHeight/small.offsetHeight) +"px";
+
+    }
+
+
+</script>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #image {
+            width: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+<img src="images/eventShijian.jpg" alt="" id="image">
+</body>
+</html>
+<script>
+    var img = document.getElementById("image");
+    document.onclick = function (event) {
+        var event = event || window.event;
+        targetX = event.clientX - img.offsetWidth/2;
+        targetY = event.clientY - img.offsetHeight/2;
+    }
+
+    //缓动公式
+    var leaderX = 0,
+            leaderY = 0,
+            targetX = 0,
+            targetY = 0;
+    setInterval(function () {
+        leaderX = leaderX + (targetX - leaderX )/10;
+        leaderY = leaderY + (targetY - leaderY )/10;
+        img.style.left = leaderX +"px";
+        img.style.top = leaderY + "px";
+    },20)
+
+</script>
