@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: peru;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>
+<script>
+    var demo = document.getElementById("box");
+    function getStyle(obj, attr) {
+        if(obj.currentStyle){
+            return obj.currentStyle[attr];
+        }else{
+            return window.getComputedStyle(obj,null)[attr];
+        }
+    }
+    console.log(getStyle(demo,"height"));
+</script>

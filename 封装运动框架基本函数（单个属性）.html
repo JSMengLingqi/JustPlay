@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #demo{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            position: absolute;
+            top: 30px;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="demo"></div>
+<button id="button1">button1</button>
+<button id="button2">button2</button>
+</body>
+</html>
+<script>
+    var button1 = document.getElementById("button1");
+    var button2 = document.getElementById("button2");
+    var demo = document.getElementById("demo");
+    button1.onclick = function () {
+        antimate(demo,"width",500);
+    }
+    button2.onclick = function () {
+        antimate(demo,"top",100)
+    }
+    function antimate(obj, attr, target) {
+        //clearInterval(obj.timer);
+        obj.timer = setInterval(function () {
+            //计算步长的动画原理，盒子本身的格式+步长
+            //先得到当前的样式，然后用target减去 除以10，计算步长
+            var current = parseInt(getStyle(obj,attr));
+            var step = (target - current)/10;
+            step = step>0?Math.ceil(step):Math.floor(step);
+            //做动画
+            obj.style[attr] = current +step + "px";
+            if (current == target){
+                clearInterval(obj.timer);
+            }
+        },30)
+    }
+    function getStyle(obj, attr) {
+        if(obj.currentStyle){
+            return obj.currentStyle[attr];
+        }else{
+            return window.getComputedStyle(obj,null)[attr];
+        }
+    }
+</script>
