@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多媒体</title>
+</head>
+<body>
+    <audio id="audio" src="茶小姐和熊先生 - Miss You Tonight.mp3"></audio>
+    <button id="btn">播放</button>
+    <button id="btn_pause">暂停</button>
+    <script>
+        var btn = document.getElementById("btn");
+        var btn_pause = document.getElementById("btn_pause");
+        var audio = document.getElementById("audio");
+        btn.addEventListener("click",function () {
+            //播放音频
+            audio.play();
+        });
+        btn_pause.addEventListener("click",function () {
+            audio.pause();
+        })
+    </script>
+
+</body>
+</html>

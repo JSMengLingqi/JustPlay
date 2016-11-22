@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+
+        <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
+
+
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+        </nav>
+    </div>
+
+</body>
+</html>
+<script>
+    //1获取所有li元素
+    var lis = document.querySelectorAll(".nav>li")
+    for(var i = 0 ; i < lis.length ; i++){
+        //2遍历，给每个元素注册事件
+        var item = lis[i];
+        item.addEventListener("mouseover",function (e) {
+            //3将所有的事件重置一下
+            for(var i = 0 ; i < lis.length ; i++) {
+                lis[i].classList.remove("active");
+            }
+                //console.log(this.classList);
+            //4事件执行中，我们将当前触发事件的元素类名加上active
+            this.classList.add("active");
+            e.preventDefault();
+        })
+    }
+</script>

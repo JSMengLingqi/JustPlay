@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="102adc42-7fa0-4033-905b-536364298ee6" name="Default" comment="放大镜有点不完美">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newcode/2.1.3-history-api.html" />
+    <list default="true" id="102adc42-7fa0-4033-905b-536364298ee6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newcode/toy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/茶小姐和熊先生 - Miss You Tonight.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/06media.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/11.10只是玩.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newcode/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newcode/class_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newcode/data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newcode/file.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newcode/full_screen.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newcode/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newcode/new_selector.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newcode/web-storage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="鼠标展示.iws" />
@@ -51,16 +62,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1480">
               <caret line="74" column="29" lean-forward="false" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="event事件.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/event事件.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -116,8 +117,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2.1.3-history-api.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2.1.3-history-api.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newcode/2.1.3-history-api.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/newcode/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -138,6 +149,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="JSMengLingqi &lt;897571544@qq.com&gt;" />
         <option value="MengLingqi &lt;897571544@qq.com&gt;" />
       </list>
     </option>
@@ -272,8 +284,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\FrontEnd\test\JustPlay\newcode" />
       <recent name="F:\FrontEnd\test\JustPlay" />
+      <recent name="F:\FrontEnd\test\JustPlay\newcode" />
       <recent name="F:\FrontEnd\test\JustPlay\images" />
       <recent name="F:\前端\test\鼠标展示" />
     </key>
@@ -403,7 +415,7 @@
       <workItem from="1477921797540" duration="1309000" />
       <workItem from="1478004292888" duration="4122000" />
       <workItem from="1478095023540" duration="27000" />
-      <workItem from="1479823707940" duration="152000" />
+      <workItem from="1479823707940" duration="233000" />
     </task>
     <task id="LOCAL-00001" summary="kkk">
       <created>1473259756581</created>
@@ -531,11 +543,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477819008723</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="放大镜有点不完美">
+      <created>1479823874016</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1479823874016</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133744000" />
+    <option name="totallyTimeSpent" value="133825000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -619,7 +638,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/鼠标展示.html" />
     <entry file="file://$PROJECT_DIR$/点击隐藏文字.html" />
     <entry file="file://$PROJECT_DIR$/demo css部分.html" />
     <entry file="file://$PROJECT_DIR$/通过验证表单.html">
@@ -953,6 +971,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/newcode/2.1.3-history-api.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newcode/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
