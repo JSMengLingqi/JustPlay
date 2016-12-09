@@ -2,18 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="102adc42-7fa0-4033-905b-536364298ee6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newcode/toy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/茶小姐和熊先生 - Miss You Tonight.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/06media.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/11.10只是玩.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newcode/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newcode/class_list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newcode/data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newcode/file.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newcode/full_screen.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newcode/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newcode/new_selector.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newcode/web-storage.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/00data.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/00ems.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/01data.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/01first.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/02data.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/03data.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/04data.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/05function.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/06function.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/cros.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/cros.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/jquery-1.11.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/jsonp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/jsonp.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newcode/10-drag&amp;drop.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="鼠标展示.iws" />
@@ -37,101 +41,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="无缝轮播图.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/无缝轮播图.html">
+      <file leaf-file-name="template.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="34" column="6" lean-forward="false" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+            <state relative-caret-position="156">
+              <caret line="121" column="18" lean-forward="false" selection-start-line="121" selection-start-column="18" selection-end-line="121" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="匀速运动.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/匀速运动.html">
+      <file leaf-file-name="00ems.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ajax/00ems.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="筋斗云效果.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/筋斗云效果.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1480">
-              <caret line="74" column="29" lean-forward="false" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="图标跟随鼠标移动.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/图标跟随鼠标移动.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="34" column="39" lean-forward="false" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="放大镜.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/放大镜.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1520">
-              <caret line="76" column="42" lean-forward="false" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="水平滚动条拖动.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/水平滚动条拖动.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="返回当前样式的函数.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/返回当前样式的函数.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="29" column="5" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="封装运动框架基本函数（单个属性）.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/封装运动框架基本函数（单个属性）.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="30" column="49" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2.1.3-history-api.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/newcode/2.1.3-history-api.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/newcode/bootstrap.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="240">
+              <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -207,6 +131,8 @@
         <option value="$PROJECT_DIR$/返回当前样式的函数.html" />
         <option value="$PROJECT_DIR$/封装运动框架基本函数（单个属性）.html" />
         <option value="$PROJECT_DIR$/newcode.html" />
+        <option value="$PROJECT_DIR$/newcode/10-drag&amp;drop.html" />
+        <option value="$PROJECT_DIR$/template.html" />
       </list>
     </option>
   </component>
@@ -241,6 +167,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -263,20 +190,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="newcode" />
+              <option name="myItemId" value="ajax" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.24975514" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
@@ -284,6 +210,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\FrontEnd\test\JustPlay\ajax" />
       <recent name="F:\FrontEnd\test\JustPlay" />
       <recent name="F:\FrontEnd\test\JustPlay\newcode" />
       <recent name="F:\FrontEnd\test\JustPlay\images" />
@@ -415,7 +342,14 @@
       <workItem from="1477921797540" duration="1309000" />
       <workItem from="1478004292888" duration="4122000" />
       <workItem from="1478095023540" duration="27000" />
-      <workItem from="1479823707940" duration="233000" />
+      <workItem from="1479823707940" duration="2267000" />
+      <workItem from="1479993746497" duration="1113000" />
+      <workItem from="1480234598561" duration="1504000" />
+      <workItem from="1480250256557" duration="925000" />
+      <workItem from="1480729949176" duration="77000" />
+      <workItem from="1480732766950" duration="3000" />
+      <workItem from="1480735000238" duration="19000" />
+      <workItem from="1481293289601" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="kkk">
       <created>1473259756581</created>
@@ -550,17 +484,24 @@
       <option name="project" value="LOCAL" />
       <updated>1479823874016</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="放大镜有点不完美">
+      <created>1479823958226</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1479823958226</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133825000" />
+    <option name="totallyTimeSpent" value="139531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15080526" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14787701" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -638,15 +579,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/点击隐藏文字.html" />
-    <entry file="file://$PROJECT_DIR$/demo css部分.html" />
-    <entry file="file://$PROJECT_DIR$/通过验证表单.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="57" column="55" lean-forward="false" selection-start-line="57" selection-start-column="49" selection-end-line="57" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/点击隐藏文字demo css部分.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1100">
@@ -872,7 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="880">
           <caret line="44" column="63" lean-forward="false" selection-start-line="44" selection-start-column="63" selection-end-line="44" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -894,7 +825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -902,7 +832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1480">
           <caret line="74" column="29" lean-forward="false" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -910,7 +839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -918,7 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="34" column="6" lean-forward="false" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -926,7 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -934,7 +860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1520">
           <caret line="76" column="42" lean-forward="false" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -942,7 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="34" column="39" lean-forward="false" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -950,31 +874,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
           <caret line="29" column="5" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/封装运动框架基本函数（单个属性）.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="30" column="49" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="600">
+          <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/newcode.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/newcode.html" />
     <entry file="file://$PROJECT_DIR$/newcode/2.1.3-history-api.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -982,6 +896,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newcode/10-drag&amp;drop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1300">
+          <caret line="65" column="44" lean-forward="false" selection-start-line="65" selection-start-column="44" selection-end-line="75" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="121" column="18" lean-forward="false" selection-start-line="121" selection-start-column="18" selection-end-line="121" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/00ems.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
           <folding />
         </state>
       </provider>
